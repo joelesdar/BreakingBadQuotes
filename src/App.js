@@ -40,7 +40,7 @@ function App() {
   const consultarAPI = async () => {
 
     // fetch toma la url de la que se hace la consulta
-    const api = await fetch('https://breaking-bad-quotes.herokuapp.com/v1/quotes');
+    const api = await fetch('https://api.breakingbadquotes.xyz/v1/quotes');
     const frase = await api.json();
     guardarFrase(frase[0]);
 
